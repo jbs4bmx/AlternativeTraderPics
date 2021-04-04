@@ -1,12 +1,10 @@
-# Alternative-Trader-Pics
-Modification of the pictures used for in-game traders for SPT-AKI
-
+# Alternative Trader Pictures
 
 Updates Trader icons to a much better looking alternative.
 
 >Author  : jbs4bmx
 
->Version : 1.0.0
+>Version : 2.0.0 (Supports SPT-AKI B8)
 
 
 
@@ -25,16 +23,16 @@ Follow these guidelines to make sure the new pictures fit the item frames within
 
 
 
-### Example: Prapor --> ./res/54cb50c76803fa8b248b4571.jpg (256x256)
-* If you would like to replace this picture, rename the picture of your choosing to include the same string "54cb50c76803fa8b248b4571" and copy it to the mod/res folder.
+### Example: Prapor --> ./res/59b91ca086f77469a81232e4.jpg (256x256)
+* If you would like to replace this picture, rename the picture of your choosing to include the same string "59b91ca086f77469a81232e4" and copy it to the mod/res folder.
 * If a file of the same name exists, click on "Yes" or "OK" to overwrite it.
 * To change to png from jpg, and vice versa, you will need to edit the ./src/altTraderPics.js file.
 
 >For this example (Prapor), you would need to change the filetype of the picture in the line
 ```javascript
-https_f.server.sendFile(resp, `${filepath}54cb50c76803fa8b248b4571.jpg`);
+https_f.server.sendFile(resp, `${filepath}59b91ca086f77469a81232e4.jpg`);
 ```
 >to
 ```javascript
-https_f.server.sendFile(resp, `${filepath}54cb50c76803fa8b248b4571.png`);
+https_f.server.sendFile(resp, `${filepath}59b91ca086f77469a81232e4.png`);
 ```

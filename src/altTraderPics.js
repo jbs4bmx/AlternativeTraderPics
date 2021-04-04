@@ -1,5 +1,11 @@
-/*
-    Alternative Trader Pictures
+/* altTraderPics.js
+       license: The Unlicense
+     copyright: jbs4bmx
+       website: https://www.guilded.gg/senkospub
+          name: AlternativeTraderPics
+   description: Beautify your traders.
+       version: 2.0.0
+     author(s): jbs4bmx
 */
 
 "use strict";
@@ -7,52 +13,52 @@
 class TraderPics {
     constructor() {
         this.mod = "jbs4bmx-AltTraderPics";
-        common_f.logger.logInfo(`Loading: ${this.mod}`);
-        this.funcptr = https_f.server.onRespond["IMAGE"];
-        https_f.server.onRespond["IMAGE"] = this.getImage.bind(this);
+        Logger.log(`Loading: ${this.mod}`);
+        this.funcptr = HttpServer.onRespond["IMAGE"];
+        HttpServer.onRespond["IMAGE"] = this.getImage.bind(this);
     }
     //Adding Trader Images
     getImage(sessionID, req, resp, body) {
-        const filepath = `${core_f.packager.getModPath(this.mod)}res/`;
+        const filepath = `${ModLoader.getModPath(this.mod)}res/`;
 
-        if (req.url.includes("/avatar/54cb50c76803fa8b248b4571")) {
+        if (req.url.includes("/avatar/59b91ca086f77469a81232e4")) {
             //Prapor - Pavel Yegorovich Romanenko
-            https_f.server.sendFile(resp, `${filepath}54cb50c76803fa8b248b4571.jpg`);
+            HttpServer.sendFile(resp, `${filepath}59b91ca086f77469a81232e4.jpg`);
             return;
 
-        } else if (req.url.includes("/avatar/54cb57776803fa99248b456e")) {
+        } else if (req.url.includes("/avatar/59b91cab86f77469aa5343ca")) {
             //Therapist - Doctor Elvira Khabibullina
-            https_f.server.sendFile(resp, `${filepath}54cb57776803fa99248b456e.jpg`);
+            HttpServer.sendFile(resp, `${filepath}59b91cab86f77469aa5343ca.jpg`);
             return;
 
-        } else if (req.url.includes("/avatar/58330581ace78e27b8b10cee")) {
+        } else if (req.url.includes("/avatar/59b91cb486f77469a81232e5")) {
             //Skier - Alexander Fyodorovich Kiselyov
-            https_f.server.sendFile(resp, `${filepath}58330581ace78e27b8b10cee.jpg`);
+            HttpServer.sendFile(resp, `${filepath}59b91cb486f77469a81232e5.jpg`);
             return;
 
-        } else if (req.url.includes("/avatar/5a7c2eca46aef81a7ca2145d")) {
+        } else if (req.url.includes("/avatar/5a7c2ebb86f7746e324a06ab")) {
             //Mechanic - Sergey Arsenyevich Samoylov
-            https_f.server.sendFile(resp, `${filepath}5a7c2eca46aef81a7ca2145d.jpg`);
+            HttpServer.sendFile(resp, `${filepath}5a7c2ebb86f7746e324a06ab.jpg`);
             return;
 
-        } else if (req.url.includes("/avatar/5ac3b934156ae10c4430e83c")) {
+        } else if (req.url.includes("/avatar/5ac3b86a86f77461491d1ad8")) {
             //Ragman - Abramyan Arshavir Sarkisivich
-            https_f.server.sendFile(resp, `${filepath}5ac3b934156ae10c4430e83c.jpg`);
+            HttpServer.sendFile(resp, `${filepath}5ac3b86a86f77461491d1ad8.jpg`);
             return;
 
-        } else if (req.url.includes("/avatar/5935c25fb3acc3127c3d8cd9")) {
+        } else if (req.url.includes("/avatar/59b91cbd86f77469aa5343cb")) {
             //Peacekeeper - Tadeusz Pilsudski
-            https_f.server.sendFile(resp, `${filepath}5935c25fb3acc3127c3d8cd9.jpg`);
+            HttpServer.sendFile(resp, `${filepath}59b91cbd86f77469aa5343cb.jpg`);
             return;
 
-        } else if (req.url.includes("/avatar/5c0647fdd443bc2504c2d371")) {
+        } else if (req.url.includes("/avatar/5c06531a86f7746319710e1b")) {
             //Jaeger - Ivan Egorovich Kharitonov
-            https_f.server.sendFile(resp, `${filepath}5c0647fdd443bc2504c2d371.jpg`);
+            HttpServer.sendFile(resp, `${filepath}5c06531a86f7746319710e1b.jpg`);
             return;
 
         } else if (req.url.includes("/avatar/579dc571d53a0658a154fbec")) {
-            //Fence - Unknown
-            https_f.server.sendFile(resp, `${filepath}579dc571d53a0658a154fbec.jpg`);
+            //Fence - Name Unknown
+            HttpServer.sendFile(resp, `${filepath}579dc571d53a0658a154fbec.jpg`);
             return;
         }
 
