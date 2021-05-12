@@ -4,7 +4,7 @@ Updates Trader icons to a much better looking alternative.
 
 >Author  : jbs4bmx
 
->Version : 2.0.0 (Supports SPT-AKI B8)
+>Version : 3.0.0 (Supports SPT-AKI B8)
 
 
 
@@ -26,13 +26,13 @@ Follow these guidelines to make sure the new pictures fit the item frames within
 ### Example: Prapor --> ./res/59b91ca086f77469a81232e4.jpg (256x256)
 * If you would like to replace this picture, rename the picture of your choosing to include the same string "59b91ca086f77469a81232e4" and copy it to the mod/res folder.
 * If a file of the same name exists, click on "Yes" or "OK" to overwrite it.
-* To change to png from jpg, and vice versa, you will need to edit the ./src/altTraderPics.js file.
+* To change to png from jpg, and vice versa, you will need to edit the ./src/config.js file.
 
 >For this example (Prapor), you would need to change the filetype of the picture in the line
-```javascript
-https_f.server.sendFile(resp, `${filepath}59b91ca086f77469a81232e4.jpg`);
+```json
+"extension": "jpg",
 ```
 >to
-```javascript
-https_f.server.sendFile(resp, `${filepath}59b91ca086f77469a81232e4.png`);
+```json
+"extension": "png",
 ```
