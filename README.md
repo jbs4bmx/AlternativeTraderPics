@@ -2,9 +2,9 @@
 
 Updates Trader icons to a much better looking alternative.
 
->Author  : jbs4bmx
+>Author  : jbs4bmx, revaxl
 
->Version : 3.0.0 (Supports SPT-AKI B8)
+>Version : 3.0.0 (Supports SPT-AKI 1.2.0)
 
 
 

@@ -4,8 +4,8 @@
        website: https://www.guilded.gg/senkospub
           name: AlternativeTraderPics
    description: Beautify your traders.
-       version: 2.0.0
-     author(s): jbs4bmx
+       version: 3.0.0
+     author(s): jbs4bmx, revaxl (https://github.com/revaxl)
 */
 
 const { Mod } = require("./src/altTraderPics.js");
