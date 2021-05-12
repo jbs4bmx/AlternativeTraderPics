@@ -4,7 +4,7 @@
        website: https://www.guilded.gg/senkospub
           name: AlternativeTraderPics
    description: Beautify your traders.
-       version: 3.0.0
+       version: 2.0.0
      author(s): jbs4bmx
 */
 
@@ -28,7 +28,7 @@ class TraderPics {
 
         // check if the trader id exist in the array
         if (traders.includes(traderId)) {
-            HttpServer.sendFile(resp, `${filepath}${trader}.${extension}`);
+            HttpServer.sendFile(resp, `${filepath}${traderId}.${extension}`);
             return;
         }
 
