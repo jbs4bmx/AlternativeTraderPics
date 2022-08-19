@@ -4,7 +4,7 @@ Updates Trader icons to a much better looking alternative.
 
 >Author  : jbs4bmx, revaxl
 
->Version : 2.2.3 (Supports SPT-AKI 2.2.3 and EFT Version 0.12.12.15.16909)
+>Version : 311.0.0 (Supports SPT-AKI 3.1.1 and EFT Version 0.12.12.30.19078)
 
 
 
@@ -34,7 +34,7 @@ List of supported mods:
 
 
 ## Installation
-Just place the folder named "ZZ-AlternativeTraderPics" into your "/user/mods" folder.
+Extract the contents of the zip file into the root of your SPT folder. It will automatically place the file into your mods folder.
 
 This mod should be loaded after all other mods that add new traders.
 
@@ -59,8 +59,8 @@ Follow these guidelines to make sure the new pictures fit the item frames within
 
 
 
-### Example: Prapor --> ./res/59b91ca086f77469a81232e4.jpg (256x256)
-* If you would like to replace this picture, rename the picture of your choosing to include the same string "59b91ca086f77469a81232e4" and copy it to the mod/res folder.
+### Example: Prapor --> ./res/54cb50c76803fa8b248b4571.jpg (256x256)
+* If you would like to replace this picture, rename the picture of your choosing to include the same string "54cb50c76803fa8b248b4571" and copy it to the mod/res folder.
 * If a file of the same name exists, click on "Yes" or "OK" to overwrite it.
 * To change to png from jpg, and vice versa, you will need to edit the ./src/config.js file.
 
