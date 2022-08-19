@@ -6,6 +6,9 @@ Updates Trader icons to a much better looking alternative.
 
 >Version : 311.0.0 (Supports SPT-AKI 3.1.1 and EFT Version 0.12.12.30.19078)
 
+:bangbang:
+DISCLAIMER: THIS MOD IS A WIP... IT CURRENTLY DOES NOT WORK. I STILL NEED TO UPDATE THE METHODS BEFORE IT WILL WORK.
+:bangbang:
 
 
 ## Additional Mod Support
