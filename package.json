@@ -1,10 +1,10 @@
 {
 	"name": "AlternativeTraderPics",
-	"version": "311.0.0",
+	"version": "321.0.1",
 	"main": "src/altPics.js",
 	"license": "MIT",
 	"author": "jbs4bmx",
-    "akiVersion":">=3.1.1",
+    "akiVersion":">=3.2.1",
     "scripts": {
         "setup:environment": "npm i",
         "build:unzipped": "copyfiles -e \"./node_modules/**/*.*\" -e \"./dist/**/*.*\" -e \"./package-lock.json\" -e \"./tsconfig.json\" -e \"./README.txt\" -e \"./mod.code-workspace\" \"./**/*.*\" ./dist",
