@@ -1,3 +1,12 @@
+If you like these artists' work, please consider contributing to them.
+All links are provided to their pages.
+They all provide fantastic works of art and deserve the recognition for all of their hard work.
+A lot of artists even do commission work.
+
+
+Listed traders are sorted by mods. (Not in alphabetical order.)
+Each file name is followed by the artist's name and then a link to their page.
+
 ========================================================================
 ===== Alternative Trader Pics ==========================================
 ========================================================================
@@ -6,7 +15,7 @@ file: peacekeeper.jpg
     artist: S14-Oni-chan
     link: https://www.artstation.com/tohru-san
 
-trader: 5c06531a86f7746319710e1b (Jaeger)
+trader:  (Jaeger)
 file: vsk_94_by_maridjan_kirisame_defxgna-fullview.jpg
     artist: Maridjan-kirisame
     link: https://www.deviantart.com/maridjan-kirisame
@@ -134,7 +143,7 @@ file: ak_12_by_maridjan_kirisame_dcmn1mp-fullview.jpg
 ===== Ducc =============================================================
 ========================================================================
 trader: ducc
-file: _commission_24__duck_pond_by_leenarie_de9kxoo-fullview.jpg
+file: commission_24__duck_pond_by_leenarie_de9kxoo-fullview.jpg
     artist: LeeNarie
     link: https://www.deviantart.com/leenarie
 
@@ -216,9 +225,37 @@ file: tetsunyan-studios-89572935-p0-master1200.jpg
 ===== BiggerBang =======================================================
 ========================================================================
 trader: avatar
+file: r-o-iaki-0004.jpg
+    artist: LightBox라이트박스
+    link: https://www.artstation.com/iaki
+
+
+========================================================================
+===== K-9 ==============================================================
+========================================================================
+trader: cat
+file: dda6he9-916432be-ff6d-4ed2-b97c-904361e1e692.jpg
+    artist: KingHatlas
+    link: https://www.deviantart.com/kinghatlas
+
+
+========================================================================
+===== ProgramK =========================================================
+========================================================================
+trader: avatar
 file: tetsunyan-studios-ling-xiaoyu-tifa-outfit-commission-by-rayleighscale-del8d77.jpg
     artist: Tetsunyan Studios
     link: https://www.artstation.com/tetsunyanstudios
+
+
+========================================================================
+===== Death ============================================================
+========================================================================
+trader: death
+file: r-o-iaki-0004.jpg
+    artist: LightBox라이트박스
+    link: https://www.artstation.com/iaki
+
 
 
 
@@ -262,17 +299,13 @@ file: tetsunyan-studios-elvdtx9vcaevy0j.jpg
     artist: Tetsunyan Studios
     link: https://www.artstation.com/tetsunyanstudios
 
-file: r-o-iaki-0004.jpg
-    artist: LightBox라이트박스
-    link: https://www.artstation.com/iaki
-
 file: hyun-hee-yang-sd5f56sd4f22222.jpg
     artist: Hyun-hee Yang
     link: https://www.artstation.com/ypapa
 
-file: dda6he9-916432be-ff6d-4ed2-b97c-904361e1e692.jpg
-    artist: KingHatlas
-    link: https://www.deviantart.com/kinghatlas
+file: tetsunyan-studios-ling-xiaoyu-tifa-outfit-commission-by-rayleighscale-del8d77.jpg
+    artist: Tetsunyan Studios
+    link: https://www.artstation.com/tetsunyanstudios
 
 file: d8eo1cl-ac95d43d-d67f-4e3c-9674-620f7c65a6c2.jpg
     artist: kaorub611

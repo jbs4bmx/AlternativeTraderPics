@@ -1,14 +1,14 @@
 {
     "extension": "jpg",
     "traders": [
-        "5a7c2eca46aef81a7ca2145d",
-        "5ac3b934156ae10c4430e83c",
-        "5c0647fdd443bc2504c2d371",
-        "54cb50c76803fa8b248b4571",
-        "54cb57776803fa99248b456e",
+        "5a7c2ebb86f7746e324a06ab",
+        "5ac3b86a86f77461491d1ad8",
+        "5c06531a86f7746319710e1b",
+        "59b91ca086f77469a81232e4",
+        "59b91cab86f77469aa5343ca",
+        "59b91cb486f77469a81232e5",
+        "59b91cbd86f77469aa5343cb",
         "579dc571d53a0658a154fbec",
-        "5935c25fb3acc3127c3d8cd9",
-        "58330581ace78e27b8b10cee",
         "aiotrader",
         "AKGUY",
         "armalite",
@@ -31,6 +31,8 @@
         "SCAVCAT",
         "shizu",
         "terragroup_specialist",
-        "Warden_Temporal_Id"
+        "Warden_Temporal_Id",
+        "death",
+        "cat"
     ]
 }
