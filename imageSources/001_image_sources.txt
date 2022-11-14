@@ -10,42 +10,42 @@ Each file name is followed by the artist's name and then a link to their page.
 ========================================================================
 ===== Alternative Trader Pics ==========================================
 ========================================================================
-trader: 59b91cbd86f77469aa5343cb (Peacekeeper)
-file: peacekeeper.jpg
-    artist: S14-Oni-chan
-    link: https://www.artstation.com/tohru-san
-
-trader:  (Jaeger)
-file: vsk_94_by_maridjan_kirisame_defxgna-fullview.jpg
-    artist: Maridjan-kirisame
-    link: https://www.deviantart.com/maridjan-kirisame
-
-trader: 59b91cab86f77469aa5343ca (Therapist)
-file: therapist.jpg
-    artist: GigaMessy
-    link: https://www.deviantart.com/gigamessy
-
-trader: 5ac3b86a86f77461491d1ad8 (Ragman)
-file: ragman.png
-    artist: Kazenokaze
-    link: https://www.deviantart.com/kazenokaze
-
-trader: 59b91ca086f77469a81232e4 (Prapor)
-file: cheolsu-211127.jpg
-    artist: Cheolsu
-    link: https://www.artstation.com/cheol_su
-
-trader: 5a7c2ebb86f7746e324a06ab (Mechanic)
+trader: 5a7c2ebb86f7746e324a06ab (Mechanic -- 5a7c2eca46aef81a7ca2145d)
 file: derrick-chew-armygirl-dcwj-lrf02.jpg
     artist: Derrick Chew
     link: https://www.artstation.com/dcwj
 
-trader: 59b91cb486f77469a81232e5 (Skier)
+trader: 5ac3b86a86f77461491d1ad8 (Ragman -- 5ac3b934156ae10c4430e83c)
+file: ragman.png
+    artist: Kazenokaze
+    link: https://www.deviantart.com/kazenokaze
+
+trader: 5c06531a86f7746319710e1b (Jaeger -- 5c0647fdd443bc2504c2d371)
+file: vsk_94_by_maridjan_kirisame_defxgna-fullview.jpg
+    artist: Maridjan-kirisame
+    link: https://www.deviantart.com/maridjan-kirisame
+
+trader: 59b91ca086f77469a81232e4 (Prapor -- 54cb50c76803fa8b248b4571)
+file: cheolsu-211127.jpg
+    artist: Cheolsu
+    link: https://www.artstation.com/cheol_su
+
+trader: 59b91cab86f77469aa5343ca (Therapist -- 54cb57776803fa99248b456e)
+file: therapist.jpg
+    artist: GigaMessy
+    link: https://www.deviantart.com/gigamessy
+
+trader: 59b91cb486f77469a81232e5 (Skier -- 58330581ace78e27b8b10cee)
 file: skier.jpg
     artist: Avetetsuya Studios
     link: https://www.artstation.com/avetetsuyastudios
 
-trader: 579dc571d53a0658a154fbec (Fence)
+trader: 59b91cbd86f77469aa5343cb (Peacekeeper -- 5935c25fb3acc3127c3d8cd9)
+file: peacekeeper.jpg
+    artist: S14-Oni-chan
+    link: https://www.artstation.com/tohru-san
+
+trader: 579dc571d53a0658a154fbec (Fence -- 579dc571d53a0658a154fbec)
 file: avetetsuya-studios-commission-png.jpg
     artist: Avetetsuya Studios
     link: https://www.artstation.com/avetetsuyastudios
