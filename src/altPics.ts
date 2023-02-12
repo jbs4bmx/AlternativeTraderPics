@@ -1,8 +1,8 @@
-/*
+/**
  *      Name: Alternative Trader Pics
- *   Version: 330.0.1
- * Copyright: jbs4bmx, revaxl(revingly)
- *    Update: [DMY] 14.11.2022
+ *   Version: 350.0.1
+ * Copyright: jbs4bmx, revingly
+ *    Update: [DMY] 12.02.2023
 */
 
 import { container, DependencyContainer } from "tsyringe";

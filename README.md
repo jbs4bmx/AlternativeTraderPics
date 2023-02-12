@@ -33,26 +33,26 @@ List of supported mods:
 
 ## -.\_.-= Installation -.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-
 #### ^^^ Primary Installation Instructions
-1. Extract the contents of the zip file into the root of your SPT folder. It will automatically place the file into your mods folder.
-2. This mod should be loaded after all other mods that add new traders.
-3. If you suspect that this mod is loading after an additional trader is added, the load order may need to be changed by adding an additional "Z" or more to the folders name.
-4. After altering the name, delete BSG temp folder found in "C:\Users\{username}\AppData\Local\Temp\Battlestate Games". You can find this by typing in "%LocalAppData%" (no quotes) into the address bar of Windows File Explorer. Delete the "Battlestate Games" folder.
+  1. Extract the contents of the zip file into the root of your SPT folder. It will automatically place the file into your mods folder.
+  2. This mod should be loaded after all other mods that add new traders.
+  3. If you suspect that this mod is loading after an additional trader is added, the load order may need to be changed by adding an additional "Z" or more to the folders name.
+  4. After altering the name, delete BSG temp folder found in "C:\Users\{username}\AppData\Local\Temp\Battlestate Games". You can find this by typing in "%LocalAppData%" (no quotes) into the address bar of Windows File Explorer. Delete the "Battlestate Games" folder.
 
 #### ^^^ Image Change Instructions
 You can customize it too! You can replace the traders with whatever pictures you like.
 
 Follow these guidelines to make sure the new pictures fit the item frames within the game.
-* Recommend square pictures but round can also be used
-* Transparency is ok
-* Recommended photo size = between 128x and 256x for best compatibility.
-  * Pictures can be larger (512x, 1024x, etc.), but it requires more memory to store the larger file sizes while the game is running.
-  * It can take longer for the game to load the images if there are a lot of large file sizes.
-* Recommended filetype = jpg or png
+  * Recommend square pictures but round can also be used
+  * Transparency is ok
+  * Recommended photo size = between 128x and 256x for best compatibility.
+    * Pictures can be larger (512x, 1024x, etc.), but it requires more memory to store the larger file sizes while the game is running.
+    * It can take longer for the game to load the images if there are a lot of large file sizes.
+  * Recommended filetype = jpg or png
 
 #### ^^^ Example: Prapor --> ./res/54cb50c76803fa8b248b4571.jpg (image size 256x256)
-* If you would like to replace this picture, rename the picture of your choosing to include the same string "54cb50c76803fa8b248b4571" and copy it to the mod/res folder.
-* If a file of the same name exists, click on "Yes" or "OK" to overwrite it.
-* To change to png from jpg, and vice versa, you will need to edit the ./src/config.js file.
+  * If you would like to replace this picture, rename the picture of your choosing to include the same string "54cb50c76803fa8b248b4571" and copy it to the mod/res folder.
+  * If a file of the same name exists, click on "Yes" or "OK" to overwrite it.
+  * To change to png from jpg, and vice versa, you will need to edit the ./src/config.js file.
 
 For this example (Prapor), you would need to change the filetype of the picture in the line
 ```json
@@ -65,7 +65,7 @@ to
 
 
 ## -.\_.-= Accreditation -.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-=-.\_.-
->revaxl (revingly) - Help with establishing a more fluid code workflow and the code dynamics to use custom images.
+>revingly - Help with establishing a more fluid code workflow and the code dynamics to use custom images.
 >Credits for image sources can be found in the included "001_image_sources.txt" file.
 
 :eof
