@@ -52,6 +52,11 @@ file: avetetsuya-studios-commission-png.jpg
     artist: Avetetsuya Studios
     link: https://www.artstation.com/avetetsuyastudios
 
+trader: 638f541a29ffd1183d187f57 (LightKeeper -- 638f541a29ffd1183d187f57)
+file: tetsunyan-studios-elvdtx9vcaevy0j.jpg
+    artist: Tetsunyan Studios
+    link: https://www.artstation.com/tetsunyanstudios
+
 
 ========================================================================
 ===== Andrudis-QuestManiac =============================================

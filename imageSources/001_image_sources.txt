@@ -7,6 +7,9 @@ A lot of artists even do commission work.
 Listed traders are sorted by mods. (Not in alphabetical order.)
 Each file name is followed by the artist's name and then a link to their page.
 
+
+
+
 ========================================================================
 ===== Alternative Trader Pics ==========================================
 ========================================================================
@@ -49,6 +52,11 @@ trader: 579dc571d53a0658a154fbec (Fence -- 579dc571d53a0658a154fbec)
 file: avetetsuya-studios-commission-png.jpg
     artist: Avetetsuya Studios
     link: https://www.artstation.com/avetetsuyastudios
+
+trader: 638f541a29ffd1183d187f57 (LightKeeper -- 638f541a29ffd1183d187f57)
+file: tetsunyan-studios-elvdtx9vcaevy0j.jpg
+    artist: Tetsunyan Studios
+    link: https://www.artstation.com/tetsunyanstudios
 
 
 ========================================================================
@@ -292,10 +300,6 @@ file: tetsunyan-studios-fd1c74b8-original.jpg
     link: https://www.artstation.com/tetsunyanstudios
 
 file: tetsunyan-studios-comm-storiestarter-2.jpg
-    artist: Tetsunyan Studios
-    link: https://www.artstation.com/tetsunyanstudios
-
-file: tetsunyan-studios-elvdtx9vcaevy0j.jpg
     artist: Tetsunyan Studios
     link: https://www.artstation.com/tetsunyanstudios
 
