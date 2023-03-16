@@ -27,7 +27,10 @@
         "terragroup_specialist",
         "Warden_Temporal_Id",
         "death",
-        "cat"
+        "cat",
+        "bootlegger",
+        "GoblinKing",
+        "Nascimento"
     ],
     "updatePrapor": false,
     "updateTherapist": false,

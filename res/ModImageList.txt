@@ -18,7 +18,7 @@ file: derrick-chew-armygirl-dcwj-lrf02.jpg
     link: https://www.artstation.com/dcwj
 
 trader: 5ac3b86a86f77461491d1ad8 (Ragman -- 5ac3b934156ae10c4430e83c)
-file: ragman.png
+file: mama_taka_by_kazenokaze_ddlzoni.png
     artist: Kazenokaze
     link: https://www.deviantart.com/kazenokaze
 
@@ -33,17 +33,17 @@ file: cheolsu-211127.jpg
     link: https://www.artstation.com/cheol_su
 
 trader: 59b91cab86f77469aa5343ca (Therapist -- 54cb57776803fa99248b456e)
-file: therapist.jpg
+file: dr__annie_stetic__sketch_gift___1_15__by_gigamessy_dci8r90.png
     artist: GigaMessy
     link: https://www.deviantart.com/gigamessy
 
 trader: 59b91cb486f77469a81232e5 (Skier -- 58330581ace78e27b8b10cee)
-file: skier.jpg
+file: avetetsuya-studios-ainx3isk1sx7ubboqfqesqjueno1flssgpgp4v1y.jpg
     artist: Avetetsuya Studios
     link: https://www.artstation.com/avetetsuyastudios
 
 trader: 59b91cbd86f77469aa5343cb (Peacekeeper -- 5935c25fb3acc3127c3d8cd9)
-file: peacekeeper.jpg
+file: s14-oni-chan-515678.jpg
     artist: S14-Oni-chan
     link: https://www.artstation.com/tohru-san
 
@@ -96,7 +96,7 @@ file: avetetsuya-studios-avetetsuya-studios-27173826-898566890321120-88555211978
 ===== Scav Cat =========================================================
 ========================================================================
 trader: SCAVCAT
-file: scavCat.jpg
+file: deka-yo-5d567c66-2f02-4fcf-b12f-f55b285bc08f.jpg
     artist: deka yo
     link: https://www.artstation.com/deka__yo
 
@@ -223,7 +223,7 @@ file: avetetsuya-studios-bb310433-original.jpg
     link: https://www.artstation.com/avetetsuyastudios
 
 trader: The Interchanger (Interchange)
-file: tetsunyan-studios-89572935-p0-master1200.jpg
+file: tetsunyan-studios-82988119-p0-master1200.jpg
     artist: Tetsunyan Studios
     link: https://www.artstation.com/tetsunyanstudios
 
@@ -250,18 +250,45 @@ file: dda6he9-916432be-ff6d-4ed2-b97c-904361e1e692.jpg
 ===== ProgramK =========================================================
 ========================================================================
 trader: avatar
-file: tetsunyan-studios-ling-xiaoyu-tifa-outfit-commission-by-rayleighscale-del8d77.jpg
-    artist: Tetsunyan Studios
-    link: https://www.artstation.com/tetsunyanstudios
+file: r-o-iaki-0004.jpg
+    artist: LightBox라이트박스
+    link: https://www.artstation.com/iaki
 
 
 ========================================================================
 ===== Death ============================================================
 ========================================================================
 trader: death
-file: r-o-iaki-0004.jpg
-    artist: LightBox라이트박스
-    link: https://www.artstation.com/iaki
+file: d9bslsk-b183b1db-6eab-4628-9856-ee053e059f54.jpg
+    artist: uchiha-styles
+    link: https://www.deviantart.com/uchiha-styles
+
+
+========================================================================
+===== GoblinKing =======================================================
+========================================================================
+trader: Goblin King (GoblinKing)
+file: avetetsuya-studios-162957158-1169331523519742-1681160094630374765-n.jpg
+    artist: Avetetsuya Studios
+    link: https://www.artstation.com/avetetsuyastudios
+
+
+========================================================================
+===== Bootlegger =======================================================
+========================================================================
+trader: BootLegger (bootlegger)
+file: tetsunyan-studios-89572935-p0-master1200.jpg
+    artist: Tetsunyan Studios
+    link: https://www.artstation.com/tetsunyanstudios
+
+
+========================================================================
+===== Nascimento =======================================================
+========================================================================
+trader: Nascimento
+file: tetsunyan-studios-ling-xiaoyu-tifa-outfit-commission-by-rayleighscale-del8d77.jpg
+    artist: Tetsunyan Studios
+    link: https://www.artstation.com/tetsunyanstudios
 
 
 :eof

@@ -1,8 +1,5 @@
 /**
- *      Name: Alternative Trader Pics
- *   Version: 352.0.1
  * Copyright: jbs4bmx, revingly
- *    Update: [DMY] 09.03.2023
 */
 
 import { container, DependencyContainer } from "tsyringe";

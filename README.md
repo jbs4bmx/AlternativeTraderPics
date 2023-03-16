@@ -29,6 +29,9 @@ List of supported mods:
   * ProgramK by k4a
   * K-9 Case Dealer by GamerXL
   * Death Trader by llife
+  * Bootlegger by Rhyufer
+  * GoblinKing by rockahorse
+  * Capt. Nascimento by URASAI
 
 
 ## Installation
