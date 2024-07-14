@@ -1,60 +1,55 @@
 # Alternative Trader Pictures
-Updates Trader icons to a much better looking alternative.
-<br></br>
+Updates Trader icons to a much better looking alternative. <br></br>
 
 ## Description
-Replaces the server method that displays the trader icons with a custom method that uses custom image files for the trader icons. These can be changed out to any icons(images) desired provided you follow the steps to ensure that they all match filetypes and are of equal or very similar size.
+Replaces the server method that displays the trader icons with a custom method that uses custom image files for the trader icons. These can be changed out to any icons(images) desired provided you follow the steps to ensure that they all match filetypes and are of equal or very similar size. <br></br>
 
-This mod supports traders from other mods as well. I will attempt to do my best to keep up with the ever changing mod list out there, but I cannot make any guarantees.
-<br></br>
 
-**Mod Support (Updated for 3.5.5+ Mod Traders)**
+## Mod Support
+This mod attempts to support traders from other mods as well. I will attempt to do my best to keep up with the ever changing mod list out there, but I cannot make any guarantees. <br></br>
 
-Trader Mods supported by this mod:
+**Mod Support List** <br>
+Note that some of these mods may no longer be actively supported by their authors, however, this mod will continue to support them so they will work should the mod authors return or someone else picks up the reigns and continues to update the mods.
+  * (ATF) Valkyrie Trader by CZ_2128
   * AIO-Seller by bluehead
   * AKGuy Super Shop by Fershte
   * AllinOne (Anastasia + Svetlana) by Flowless
   * AR Shoppe Unlimited by Fershte
-  * Bootlegger by Rhyufer
-  * CocoLemon's IProject by Pettan
-  * D.R.I.P. by MeowletteBlackpaw
-  * GearGal by Fershte
-  * GoblinKing by rockahorse
-  * Gunsmith by alex
-  * Katarina Black by Helldiver
-  * KeyMaster Trader by s1nk0
-  * MFAC Shop Module by Pettan
-  * Priscilu by Reis
-  * Questor by Alex
-  * The Broker by Nightingale
-<br></br>
-
-**No Longer Supported (or considered for support at this time)**
-
-Trader mods no longer supported by this mod due to their age and or due to abandoned plans:
-  * (ATF) Valkyrie Trader by CZ_2128
   * ArmorUpgrader by 101p
   * BiggerBang by Thunderbags
+  * Bootlegger by Rhyufer
   * Capt. Nascimento by URASAI
+  * CocoLemon's IProject by Pettan
+  * D.R.I.P. by MeowletteBlackpaw
   * Death Trader by llife
   * Ducc Trader by ducc
   * Emporium by k4a
   * Food&Drink Trader by Revingly
+  * GearGal by Fershte
+  * GoblinKing by rockahorse
+  * Gunsmith by alex
   * Hardcore Traders by Meiosis
   * Hephaestus by alexKarpen
   * K-9 Case Dealer by GamerXL
+  * Katarina Black by Helldiver
+  * KeyMaster Trader by s1nk0
   * Leaves Weapon Tweaker by DeadLeaves
   * Lock Picking Attorney by Revingly
   * Maid Traders by MrFandor1n
   * Meguru is coming! by okaoka2
+  * MFAC Shop Module by Pettan
   * Operator by alex
+  * Priscilu by Reis
   * ProgramK by k4a
   * QuestManiac by Andrudis
+  * Questor by Alex
   * Scav Cat by DonutxLord
   * ScavCat Redux by SixGod
   * Supplier by Miralyn
   * TerraGroup Specialist by Ereshkigal
+  * The Broker by Nightingale
 <br></br>
+
 
 ## Installation
 ^^^ PRIMARY INSTALLATION INSTRUCTIONS
@@ -85,47 +80,68 @@ Follow these guidelines to make sure the new pictures fit the item frames within
 
 ## Configuration Options
 You can specify which images you want to change and leave the rest as their defaults. Default is to change all supported trader images (default traders and mod traders). To change this, set the line '**updateAllTraders**' to *false* and then enable or disable the trader(s) of your choice in the options below by setting them to *true*. '**updateAllTraders**' will override other options when set to *true*.
-```json
+```jsonc
 {
-    "----- File Extension 1 ": "Sets the extension of the image files",
-    "----- File Extension 2 ": "Only one supported extension at a time.",
-    "extension": "jpg",
+  // ======================================================================================
+  // Sets the extension of the image files. (Only one supported extension at a time.)
+  // Default = "jpg"
+  // It is recommended that you do not change this setting.
+  // ======================================================================================
+  "extension": "jpg",
 
-    "----- Update All Traders 1 ": "Update all supported traders (default and mods)",
-    "----- Update All Traders 2 ": "This will override the remaining options in this config",
-        "updateAllTraders": true,
 
-    "----- Update Only Selected Traders 1": "Choose which traders you want to update",
-    "----- Update Only Selected Traders 2": "The setting 'updateAllTraders' must be set to false for these options to work",
-        "DEFAULT TRADERS": "-------------------------",
-            "updatePrapor": false,
-            "updateTherapist": false,
-            "updateFence": false,
-            "updateSkier": false,
-            "updatePeacekeeper": false,
-            "updateMechanic": false,
-            "updateRagman": false,
-            "updateJaeger": false,
-            "updateLightKeeper": false,
-        "MOD TRADERS": "-------------------------",
-            "AIOTrader": false,
-            "AKGuy": false,
-            "AnastasiaSvetlana": false,
-            "ARSHoppe": false,
-            "Bootlegger": false,
-            "DRIP": false,
-            "GearGal": false,
-            "GoblinKing": false,
-            "Gunsmith": false,
-            "IProject": false,
-            "KatarinaBlack": false,
-            "KeyMaster": false,
-            "MFACShop": false,
-            "Priscilu": false,
-            "Questor": false,
-            "TheBroker": false
+  // ======================================================================================
+  // Update all supported traders (including any potentially supported mod traders).
+  // 'BTR Driver' is considered WIP and may not work yet.
+  // Default = true
+  // ======================================================================================
+  "updateAllTraders": true,
+
+
+  // ======================================================================================
+  // Choose which traders you want to update.
+  // The setting 'updateAllTraders' must be set to false for these options to work.
+  // ======================================================================================
+  //*_____DEFAULT TRADERS_____*/
+  "updatePrapor": false,
+  "updateTherapist": false,
+  "updateFence": false,
+  "updateSkier": false,
+  "updatePeacekeeper": false,
+  "updateMechanic": false,
+  "updateRagman": false,
+  "updateJaeger": false,
+  "updateLightKeeper": false,
+  "updateBTRDriver": false,
+  "updateRef": false,
+
+  //*_____MOD TRADERS_____*/
+  "AIOTrader": false,
+  "AKGuy": false,
+  "AnastasiaSvetlana": false,
+  "ARSHoppe": false,
+  "Bootlegger": false,
+  "DRIP": false,
+  "GearGal": false,
+  "GoblinKing": false,
+  "Gunsmith": false,
+  "IProject": false,
+  "KatarinaBlack": false,
+  "KeyMaster": false,
+  "MFACShop": false,
+  "Priscilu": false,
+  "Questor": false,
+  "TheBroker": false
 }
 ```
+
+## Mod FAQ
+**Q: Why aren't the trader images changing?** <br>
+A: The cached default images can override custom images if they are currently present when first using this mod. To get around this, you can use the included batch script in the mod's main folder to backup the default images so that custom images will load. The script name is "Rename-Cached_Images.bat". Just double-click it to launch and follow the on-screen prompts. (Note: This script also lets you restore your default images, should you ever want to uninstall this mod. Just run it again and follow the prompts.)
+
+**Q: Do you plan on supporting other trader mods?** <br>
+A: Short answer: yes. <br>
+A: Long answer: I plan to update this mod to support as many trader mods as possible, however, I cannot guarantee any sort of an ETA for those updates.
 <br></br>
 
 ## Accreditation
@@ -169,6 +185,14 @@ Credits for image sources:
       * originalFile: tetsunyan-studios-elvdtx9vcaevy0j.jpg
       * artist: Tetsunyan Studios
       * link: https://www.artstation.com/tetsunyanstudios
+    * trader: 6617beeaa9cfa777ca915b7c (Ref -- 6617beeaa9cfa777ca915b7c )
+      * originalFile: tetsunyan-studios-229471865-365428901650085-1026197241430662252-n.jpg
+      * artist: Tetsunyan Studios
+      * link: https://www.artstation.com/tetsunyanstudios
+    * trader: 656f0f98d80a697f855d34b1 (BTR Driver -- 656f0f98d80a697f855d34b1 )
+      * originalFile: dciyn9f-d847b1d2-9cb1-40d9-88c4-55a31d9e2e98.jpg
+      * artist: DemonGirl289
+      * link: https://www.deviantart.com/demongirl289
 <br></br>
 
   * AIO-Seller by bluehead

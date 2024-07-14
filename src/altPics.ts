@@ -3,17 +3,21 @@
 */
 
 import { container, DependencyContainer } from "tsyringe";
-import { PreAkiModLoader } from "@spt-aki/loaders/PreAkiModLoader";
-import { IPreAkiLoadMod } from "@spt-aki/models/external/IPreAkiLoadMod";
-import { IPostAkiLoadMod } from "@spt-aki/models/external/IPostAkiLoadMod";
-import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
-import { ImageRouter } from "@spt-aki/routers/ImageRouter";
+import { ImageRouter } from "@spt/routers/ImageRouter";
+import { ILogger } from "@spt/models/spt/utils/ILogger";
+import { IPreSptLoadMod } from "@spt/models/external/IPreSptLoadMod";
+import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
+import { LogTextColor } from "@spt/models/spt/logging/LogTextColor";
+import { PreSptModLoader } from "@spt/loaders/PreSptModLoader";
+import { VFS } from "@spt/utils/VFS";
+import { jsonc } from "jsonc";
+import path from "path";
 
 const logger = container.resolve<ILogger>("WinstonLogger");
 const imageRouter = container.resolve<ImageRouter>("ImageRouter");
-const preAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
+const preSptModLoader = container.resolve<PreSptModLoader>("PreSptModLoader");
 
-class TraderPics implements IPreAkiLoadMod, IPostAkiLoadMod
+class TraderPics implements IPreSptLoadMod, IPostDBLoadMod
 {
     private container: DependencyContainer;
     private pkg;
@@ -21,17 +25,53 @@ class TraderPics implements IPreAkiLoadMod, IPostAkiLoadMod
     private modName = this.path.basename(this.path.dirname(__dirname.split('/').pop()));
     private fs = require('fs');
 
-    public postAkiLoad(container: DependencyContainer) {
+    /*
+    public async postDBLoad(container: DependencyContainer): Promise<void> {
         this.pkg = require("../package.json");
-        const { extension, updateAllTraders, updatePrapor, updateTherapist, updateFence, updateSkier, updatePeacekeeper, updateMechanic, updateRagman, updateJaeger, updateLightKeeper, AIOTrader, AKGuy, AnastasiaSvetlana, ARSHoppe, Bootlegger, DRIP, GearGal, GoblinKing, Gunsmith, IProject, KatarinaBlack, KeyMaster, MFACShop, Priscilu, Questor, TheBroker } = require('./config.json');
-        const filepath = `${preAkiModLoader.getModPath(this.modName)}res/`;
+        const vfs = container.resolve<VFS>("VFS");
+        const { extension, updateAllTraders } = jsonc.parse(vfs.readFile(path.resolve(__dirname, "../config.jsonc")));
+        const filepath = `${preSptModLoader.getModPath(this.modName)}res/`;
+
+        this.fs.readdir(filepath, (err, files) => {
+            if ( updateAllTraders ) {
+                files.forEach(file => {
+                    const traderName = file.split('/').pop().split('.').shift()
+                        logger.log(`Updating trader image: ${traderName}`, LogTextColor.BLUE)
+                        imageRouter.addRoute(`/files/trader/avatar/${traderName}`,`${filepath}${traderName}.${extension}`);
+                });
+            }
+        });
+        logger.info(`${this.pkg.author}-${this.pkg.name} v${this.pkg.version}:Cached Successfully`);
+    }
+    */
+    public postSptLoad(container: DependencyContainer) {
+        this.pkg = require("../package.json");
+        const vfs = container.resolve<VFS>("VFS");
+        const { extension, updateAllTraders, updatePrapor, updateTherapist, updateFence, updateSkier, updatePeacekeeper, updateMechanic, updateRagman, updateJaeger, updateLightKeeper, updateBTRDriver, updateRef, AIOTrader, AKGuy, AnastasiaSvetlana, ARSHoppe, Bootlegger, DRIP, GearGal, GoblinKing, Gunsmith, IProject, KatarinaBlack, KeyMaster, MFACShop, Priscilu, Questor, TheBroker } = jsonc.parse(vfs.readFile(path.resolve(__dirname, "../config.jsonc")));
+        const filepath = `${preSptModLoader.getModPath(this.modName)}res/`;
+
+        // Future implementation of image type selection.
+        /*
+        if ( traderSelection.Anime ) {
+            const filepath = `${preSptModLoader.getModPath(this.modName)}res/anime/`;
+        }
+        if ( traderSelection.Realistic ) {
+            const filepath = `${preSptModLoader.getModPath(this.modName)}res/real/`;
+        }
+        if ( traderSelection.StableDiffusion ) {
+            const filepath = `${preSptModLoader.getModPath(this.modName)}res/stable/`;
+        }
+        */
 
         this.fs.readdir(filepath, (err, files) => {
             files.forEach(file => {
                 const traderName = file.split('/').pop().split('.').shift()
+                //const fileName = file.split('/').pop()
                 if ( updateAllTraders ) {
                     // Updates all supported traders, both default and mod traders.
                     imageRouter.addRoute(`/files/trader/avatar/${traderName}`,`${filepath}${traderName}.${extension}`);
+                    // The following code is for a future implementation that is extension independent.
+                    //imageRouter.addRoute(`/files/trader/avatar/${traderName}`,`${filepath}${path.sep}${fileName}`);
 
                 } else {
                     // Updates only the selected traders as supported by this mod.
@@ -77,6 +117,16 @@ class TraderPics implements IPreAkiLoadMod, IPostAkiLoadMod
                     }
                     if ( updateLightKeeper ) {
                         if ( traderName === "638f541a29ffd1183d187f57" ) {
+                            imageRouter.addRoute(`/files/trader/avatar/${traderName}`,`${filepath}${traderName}.${extension}`);
+                        }
+                    }
+                    if ( updateBTRDriver ) {
+                        if ( traderName === "656f0f98d80a697f855d34b1" ) {
+                            imageRouter.addRoute(`/files/trader/avatar/${traderName}`,`${filepath}${traderName}.${extension}`);
+                        }
+                    }
+                    if ( updateRef ) {
+                        if ( traderName === "6617beeaa9cfa777ca915b7c" ) {
                             imageRouter.addRoute(`/files/trader/avatar/${traderName}`,`${filepath}${traderName}.${extension}`);
                         }
                     }
@@ -174,7 +224,6 @@ class TraderPics implements IPreAkiLoadMod, IPostAkiLoadMod
         });
         logger.info(`${this.pkg.author}-${this.pkg.name} v${this.pkg.version}:Cached Successfully`);
     }
-
 }
 
 module.exports = { mod: new TraderPics() }
