@@ -5,67 +5,30 @@
 import { container, DependencyContainer } from "tsyringe";
 import { ImageRouter } from "@spt/routers/ImageRouter";
 import { ILogger } from "@spt/models/spt/utils/ILogger";
-import { IPreSptLoadMod } from "@spt/models/external/IPreSptLoadMod";
-import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
-import { LogTextColor } from "@spt/models/spt/logging/LogTextColor";
 import { PreSptModLoader } from "@spt/loaders/PreSptModLoader";
 import { VFS } from "@spt/utils/VFS";
 import { jsonc } from "jsonc";
 import path from "path";
+import { IPostSptLoadMod } from "@spt/models/external/IPostSptLoadMod";
 
 const logger = container.resolve<ILogger>("WinstonLogger");
 const imageRouter = container.resolve<ImageRouter>("ImageRouter");
 const preSptModLoader = container.resolve<PreSptModLoader>("PreSptModLoader");
 
-class TraderPics implements IPreSptLoadMod, IPostDBLoadMod
+class TraderPics implements IPostSptLoadMod
 {
-    private container: DependencyContainer;
     private pkg;
-    private modName: string = path.basename(path.dirname(__dirname.split("/").pop()!));
+    private modName: string = path.basename(path.dirname(__dirname));
     private fs = require('fs');
 
-    /*
-    public async postDBLoad(container: DependencyContainer): Promise<void> {
-        this.pkg = require("../package.json");
-        const vfs = container.resolve<VFS>("VFS");
-        const { extension, updateAllTraders } = jsonc.parse(vfs.readFile(path.resolve(__dirname, "../config.jsonc")));
-        const filepath = `${preSptModLoader.getModPath(this.modName)}res/`;
-
-        this.fs.readdir(filepath, (err, files) => {
-            if ( updateAllTraders ) {
-                files.forEach(file => {
-                    const traderName = file.split('/').pop().split('.').shift()
-                        logger.log(`Updating trader image: ${traderName}`, LogTextColor.BLUE)
-                        imageRouter.addRoute(`/files/trader/avatar/${traderName}`,`${filepath}${traderName}.${extension}`);
-                });
-            }
-        });
-        logger.info(`${this.pkg.author}-${this.pkg.name} v${this.pkg.version}:Cached Successfully`);
-    }
-    */
     public postSptLoad(container: DependencyContainer) {
         this.pkg = require("../package.json");
         const vfs = container.resolve<VFS>("VFS");
         const { extension, updateAllTraders, updatePrapor, updateTherapist, updateFence, updateSkier, updatePeacekeeper, updateMechanic, updateRagman, updateJaeger, updateLightKeeper, updateBTRDriver, updateRef, AIOTrader, AKGuy, AnastasiaSvetlana, ARSHoppe, Bootlegger, DRIP, GearGal, GoblinKing, Gunsmith, IProject, KatarinaBlack, KeyMaster, MFACShop, Priscilu, Questor, TheBroker } = jsonc.parse(vfs.readFile(path.resolve(__dirname, "../config.jsonc")));
         const filepath = `${preSptModLoader.getModPath(this.modName)}res/`;
-
-        // Future implementation of image type selection.
-        /*
-        if ( traderSelection.Anime ) {
-            const filepath = `${preSptModLoader.getModPath(this.modName)}res/anime/`;
-        }
-        if ( traderSelection.Realistic ) {
-            const filepath = `${preSptModLoader.getModPath(this.modName)}res/real/`;
-        }
-        if ( traderSelection.StableDiffusion ) {
-            const filepath = `${preSptModLoader.getModPath(this.modName)}res/stable/`;
-        }
-        */
-
         this.fs.readdir(filepath, (err, files) => {
             files.forEach(file => {
                 const traderName = file.split('/').pop().split('.').shift()
-                //const fileName = file.split('/').pop()
                 if ( updateAllTraders ) {
                     // Updates all supported traders, both default and mod traders.
                     imageRouter.addRoute(`/files/trader/avatar/${traderName}`,`${filepath}${traderName}.${extension}`);
