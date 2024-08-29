@@ -21,8 +21,7 @@ class TraderPics implements IPreSptLoadMod, IPostDBLoadMod
 {
     private container: DependencyContainer;
     private pkg;
-    private path = require('path');
-    private modName = this.path.basename(this.path.dirname(__dirname.split('/').pop()));
+    private modName: string = path.basename(path.dirname(__dirname.split("/").pop()!));
     private fs = require('fs');
 
     /*
